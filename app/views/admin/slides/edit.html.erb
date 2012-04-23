@@ -1,0 +1,4 @@
+<% @content_for_title = h(@slide.tagline2 + ' ' + @slide.tagline2) -%>
+	<h2><%=h @slide.tagline1 + ' ' + @slide.tagline2 %></h2>
+<%= render :partial => 'form' %>
+	<p class="button"><%= link_to "Discard changes?", admin_slides_path(), :class=> 'cancel', :confirm => "Discard changes?" %></p>

@@ -1,0 +1,9 @@
+Name: <%= @comment.name %>
+Email: <%= @comment.email %>
+Subject: <%= @comment.subject unless @comment.subject.blank? %>
+Location: <%= @comment.location.name unless @comment.location.blank? %>
+
+Comments:
+============================================================================
+<%= @comment.body %>
+============================================================================

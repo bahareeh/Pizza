@@ -1,0 +1,161 @@
+/*
+
+	Pizza Town About Styles
+	Kenzie Campbell [kenzie@famousfolks.ca]
+	pizzatown.ca/stylesheets/about.css
+	October 2008
+	
+*/
+
+
+/* =Content ******************************************************************/
+
+#content .main h3 {
+	font-family: 'Arial Black';
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#content .main h4 {
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#content .main ul li {
+}
+
+#content .main ul li strong {
+	margin-top: 1em;
+	display: block;
+}
+
+#content .main dl dt {
+	font-family: 'Arial Black';
+	text-transform: uppercase;
+}
+
+#content .main dl dd strong {
+	font-family: 'Arial Black';
+	text-transform: uppercase;
+}
+
+#content .main h3 {
+	font-size: 1em;
+	font-family: 'Arial Black';
+	margin: 1em 0;
+	text-transform: uppercase;
+}
+
+#content .sidebar h3 {
+	font-family: 'Arial Black';
+	font-size: 1.2em;
+	margin-left: 20px;
+}
+
+/* =News ******************************************************************/
+
+
+#content .news {
+	float: left;
+	font-size: 1.5em;
+	line-height: 1.5;
+	margin-left: 20px;
+	width: 575px;
+}
+#content .news h3 {
+	font-size: 1.4em;
+	margin: 2em 0 0 0;
+}
+#content .news h3:first-child {
+	margin-top: 0;
+}
+#content .news p {
+	margin: 1em 0;
+}
+#content .news .archive {
+	font-size: 1.4em;
+	margin: 2em 0;
+}
+#content .news .archive a {
+	font-family: 'Arial Black';
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#content .photo {
+	float: right;
+	margin: 1.2em 0 20px 20px;
+}
+#content .photo img {
+	border-bottom: 6px solid #000;
+}
+
+#content .tags {
+	float: left;
+	margin-left: 20px;
+	width: 220px;
+}
+#content .tags ul {
+	font-size: 1.5em;
+	line-height: 1.6;
+	list-style: none;
+	margin-bottom: 2em;
+}
+#content .tags ul li.current a {
+	color: #FFF;
+}
+#content .tags ul li a {
+	text-decoration: none;
+}
+#content .tags .feed a {
+	background: url(../images/icon-feed.png) no-repeat 0 50%;
+	font-size: 1.4em;
+	font-family: 'Arial Black';
+	margin: 1em 0;
+	min-height: 16px;
+	padding: 2px 0 2px 20px;
+	text-decoration: none;
+}
+
+
+/* =Forms ******************************************************************/
+
+form {
+	margin: 1em 0;
+}
+form#newsletter-form {
+	
+	width: 20em;
+}
+#content form#newsletter-form h3 {
+	font-family: 'Arial Black';
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 1em 0;
+	font-size: 1.1em;
+}
+form fieldset {
+	border: 0;
+	margin: 1em 0;
+}
+form label {
+	color: #DDD;
+	display: block;
+}
+form input.text, form select, form textarea, form input.file {
+	font-size: 1.4em;
+	width: 99%;
+}
+form .action {
+	text-align: center;
+}
+form #button {
+	font-size: 1.4em;
+}
+
+.error {
+	padding: 2px 0 2px 20px;
+	color: #D00;
+	background: url(../images/icon-alert.png) no-repeat 0 50%;
+}

@@ -1,0 +1,4 @@
+<% @content_for_title = h(@post.title) -%>
+	<h2><%=h @post.title %></h2>
+<%= render :partial => 'form' %>
+	<p class="button"><%= link_to "Discard changes?", admin_posts_path(), :class=> 'cancel', :confirm => "Discard changes?" %></p>

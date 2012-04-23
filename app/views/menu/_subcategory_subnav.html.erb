@@ -1,0 +1,5 @@
+	<ul class="subsubnav">
+<% @subcategory.parent.children.each do |sub| -%>
+		<li<% if sub.slug == params[:subcategory] %> class="current"<% end %>><%= link_to sub.submenu_title, :controller => "menu", :action => sub.parent.slug, :id => sub.slug %><% unless sub == @subcategory.parent.children.last %> /<% end %></li>
+<% end -%>
+	</ul>

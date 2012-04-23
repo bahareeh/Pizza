@@ -1,0 +1,7 @@
+<% @content_for_title = "Log In" -%>
+	<% form_tag admin_session_path do %>
+		<div><%= label_tag 'login' %> <%= text_field_tag 'login', @login %></div>
+		<div><%= label_tag 'password' %> <%= password_field_tag 'password', nil %></div>
+		<div class="checkbox"><%= check_box_tag 'remember_me', '1', @remember_me %> <%= label_tag 'remember_me', 'Remember me for 2 weeks' %></div>
+		<div class="action"><%= submit_tag 'Log In' %></div>
+	<% end -%>

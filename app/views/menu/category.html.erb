@@ -1,0 +1,18 @@
+<% @content_for_title = strip_tags(@category.title) -%>
+<div id="content">
+	<h2><%= @category.title %></h2>
+<% unless @category.description.blank? -%>
+	<div class="description">
+<%= textilize(@category.description) %>
+	</div><!-- // description -->
+<% end -%>
+	<ul class="items">
+<% @category.items.sort_by(&:position).each do |item| -%>
+		<li>
+<% if item.image %>			<img src="<%= item.image %>" alt="" /><% end %>
+			<h3><%= textilize_without_paragraph(item.title) %></h3>
+			<div><%= textilize(item.body) %></div>
+		</li>
+<% end -%>
+	</ul><!-- // items -->
+</div><!-- // content -->

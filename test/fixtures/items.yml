@@ -1,0 +1,644 @@
+--- 
+items_001: 
+  body: "6 pcs. 8.00 / 12 pcs. 15.00"
+  category_id: "1"
+  created_at: ~
+  filename: appetizers-wings.jpg
+  id: "1"
+  title: "Jumbo Wings"
+  updated_at: ~
+items_002: 
+  body: "6 pcs. 7.00 / 12 pcs. 13.00"
+  category_id: "1"
+  created_at: ~
+  filename: appetizers-mozza.jpg
+  id: "2"
+  title: Mozzastix
+  updated_at: ~
+items_003: 
+  body: |-
+      Bacon & Shredded Romano.
+      6 pcs. 5.00 / 12 pcs. 8.00
+  category_id: "1"
+  created_at: ~
+  filename: appetizers-perogies.jpg
+  id: "3"
+  title: Perogies
+  updated_at: ~
+items_004: 
+  body: "6 pcs. 5.00 / 12 pcs. 9.00"
+  category_id: "1"
+  created_at: ~
+  filename: appetizers-springrolls.jpg
+  id: "4"
+  title: "Mini Chicken Spring Rolls"
+  updated_at: ~
+items_005: 
+  body: "6 pcs. 5.00 / 12 pcs. 9.00"
+  category_id: "1"
+  created_at: ~
+  filename: appetizers-chickbites.jpg
+  id: "5"
+  title: "Spicy Chicken Bites"
+  updated_at: ~
+items_006: 
+  body: |-
+      2 Jumbo Wings, 2 Perogies, 2 Spicy Chicken Bites.
+      7.00
+  category_id: "1"
+  created_at: ~
+  filename: appetizers-mix1.jpg
+  id: "6"
+  title: "Appetizer Mix 1"
+  updated_at: ~
+items_007: 
+  body: |-
+      2 Jumbo Wings, 2 Mini Spring Rolls, 2 Mozzastix.
+      7.00
+  category_id: "1"
+  created_at: ~
+  filename: appetizers-mix2.jpg
+  id: "7"
+  title: "Appetizer Mix 2"
+  updated_at: ~
+items_008: 
+  body: |-
+      With Red Onions, Tomatoes, Green Peppers, Shredded Cheddar, Shredded Mozzarella, and Black Olives. Served with salsa and sour cream on the side.
+      Small  9.00 / Large  13.00      
+      Add grilled chicken breast  3.50
+  category_id: "2"
+  created_at: ~
+  filename: appetizers-nachos.jpg
+  id: "8"
+  title: Nachos
+  updated_at: ~
+items_009: 
+  body: |-
+      Chopped Romaine, Crispy Bacon Bits, Shredded Parmesan, Seasoned Croutons, with Caesar Dressing.  
+      Regular  5.50 / Large 8.50
+  category_id: "3"
+  created_at: ~
+  filename: salads-chickcaesar.jpg
+  id: "9"
+  title: "Hail Caesar!"
+  updated_at: ~
+items_010: 
+  body: |-
+      Chopped Romaine, Freshly Cut Tomatoes, Crumbled Feta, Kalamata Olives, English Cucumbers, Red Onions, with Greek Dressing.
+      Regular 5.50 / Large 8.50
+  category_id: "3"
+  created_at: ~
+  filename: salads-greekchick.jpg
+  id: "10"
+  title: "Greek Salad"
+  updated_at: ~
+items_011: 
+  body: |-
+      Chopped Romaine, Freshly Cut Tomatoes, English Cucumbers, Red Onions, Green Peppers, Mushrooms, Shredded Cheddar, with your choice of Italian Dressing or Ranch Dressing.
+      Regular 5.50 / Large 8.50
+  category_id: "3"
+  created_at: ~
+  filename: salads-garden.jpg
+  id: "11"
+  title: "House Salad"
+  updated_at: ~
+items_012: 
+  body: |-
+      Grilled Chicken Breast, Grilled Sirloin Steak, Grilled Turkey Breast, Tuna, Chicken Souvlaki Skewer.
+      Regular 1.75 / Large  3.50
+  category_id: "3"
+  created_at: ~
+  filename: ""
+  id: "12"
+  title: "ADD YOUR PROTEIN"
+  updated_at: ~
+items_013: 
+  body: |-
+      Served with garlic bread
+      Regular 7.00 / Large. 11.00
+  category_id: "4"
+  created_at: ~
+  filename: ""
+  id: "13"
+  title: "CREATE YOUR OWN"
+  updated_at: ~
+items_014: 
+  body: |-
+      - Five Cheese Ravioli
+      - Jumbo Mushroom Ravioli
+      - Cheese Manicotti
+  category_id: "4"
+  created_at: ~
+  filename: ""
+  id: "14"
+  title: "CHOOSE YOUR PASTA:"
+  updated_at: ~
+items_015: 
+  body: |-
+      - Marinara 
+      - Roasted Red Pepper and Garlic
+      - Alfredo
+  category_id: "4"
+  created_at: ~
+  filename: ""
+  id: "15"
+  title: "CHOOSE YOUR SAUCE:"
+  updated_at: ~
+items_016: 
+  body: |-
+      (Shredded Mozzarella, Shredded Parmesan)
+      Add Grilled Chicken Breast
+      Regular 1.75 / Large 3.50
+  category_id: "4"
+  created_at: ~
+  filename: ""
+  id: "16"
+  title: "MAKE IT CHEESY FOR AN EXTRA 0.80"
+  updated_at: ~
+items_017: 
+  body: |-
+      Beef Donair Meat, Red Onions, Freshly Cut Tomatoes and a Side of Donair Sauce.
+      Reg. 5.00 / Lrg. 8.00
+  category_id: "5"
+  created_at: ~
+  filename: wraps-donair.jpg
+  id: "17"
+  title: "Traditional Beef Donair"
+  updated_at: ~
+items_018: 
+  body: |-
+      Beef Donair Meat, Red Onions, English Cucumbers, Tzatziki Sauce. 
+      Reg.   5.00 / Lrg. 8.00
+  category_id: "5"
+  created_at: ~
+  filename: wraps-med.jpg
+  id: "18"
+  title: "Mediterranean Beef Donair"
+  updated_at: ~
+items_019: 
+  body: |-
+      Toppings  0.80 
+      Premium toppings  2.20 
+      Or you may choose any of the classic or gourmet pizza combinations.
+  category_id: "6"
+  created_at: ~
+  filename: calzones-combo.jpg
+  id: "19"
+  title: "STARTING AT JUST 7.50"
+  updated_at: ~
+items_020: 
+  body: |-
+      Chicken Souvlaki Skewers, Grilled Peppers, Grilled Onions, English Cucumbers, Freshly Cut Tomatoes, Romaine Lettuce, Tzatziki Sauce.  
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-chicksouvlaki.jpg
+  id: "20"
+  title: "Chicken Souvlaki"
+  updated_at: ~
+items_021: 
+  body: |-
+      Chicken  Grilled Chicken Breast, Crispy Bacon, Chopped Romaine, Shredded Parmesan, Cajun Caesar Sauce.
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-cajunchickcaesar.jpg
+  id: "21"
+  title: "Cajun Caesar"
+  updated_at: ~
+items_022: 
+  body: |-
+      Grilled Chicken Breast, Green Peppers, Iceberg Lettuce, Freshly Cut Tomatoes, Red Onions, Tzatziki Sauce.
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-chick.jpg
+  id: "22"
+  title: "PT Chicken"
+  updated_at: ~
+items_023: 
+  body: |-
+      Grilled Chicken Breast, Sliced Mushrooms, Red Onions, Green Peppers, Thai Sweet & Spicy Sauce.
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-thaichick.jpg
+  id: "23"
+  title: "Thai Chicken"
+  updated_at: ~
+items_024: 
+  body: |-
+      Grilled Chicken Breast, Red Onions, Green Peppers, Freshly Cut Tomatoes, Iceberg Lettuce, Cajun Sauce.
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-cajunchickcaesar.jpg
+  id: "24"
+  title: "Cajun Chicken"
+  updated_at: ~
+items_025: 
+  body: |-
+      Crispy Bacon, Freshly Cut Tomatoes, Romaine Lettuce, Shredded Cheddar, Herb & Garlic Cream Cheese.
+      Reg   4.00 / Lrg.   7.00
+  category_id: "7"
+  created_at: ~
+  filename: missing.jpg
+  id: "25"
+  title: "BLT Classic"
+  updated_at: ~
+items_026: 
+  body: |-
+      Tuna, Red Onions, English Cucumbers, Romaine Lettuce, Shredded Mozzarella, Light Mayonnaise.
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: missing.jpg
+  id: "26"
+  title: "Tuna Melt"
+  updated_at: ~
+items_027: 
+  body: |-
+      Grilled Sirloin, Sliced Mushrooms, Red Onions, Green Peppers, Shredded Mozzarella & Cheddar, BBQ Sauce.
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-philly.jpg
+  id: "27"
+  title: "Philly Steak"
+  updated_at: ~
+items_028: 
+  body: |-
+      Grilled Sirloin, English Cucumbers, Red Onions, Green Peppers, Chopped Romaine, Tzatziki Sauce.
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-med.jpg
+  id: "28"
+  title: Mediterranean
+  updated_at: ~
+items_029: 
+  body: |-
+      Grilled Turkey Breast, Crispy Bacon, Iceberg Lettuce, Freshly Cut Tomatoes, Shredded Cheddar, Herb & Garlic Cream Cheese.
+      Reg   5.00 / Lrg.   9.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-turkey-.jpg
+  id: "29"
+  title: "Turkey Club"
+  updated_at: ~
+items_030: 
+  body: |-
+      Shredded Mozzarella, Shredded Cheddar, Shredded Parmesan, Crumbled Feta, Iceberg Lettuce, Ranch Dressing.
+      Reg   5.00 / Lrg.   8.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-cheeselovers.jpg
+  id: "30"
+  title: "Cheese Lovers"
+  updated_at: ~
+items_031: 
+  body: |-
+      Sliced Black Olives, Shredded Cheddar, Green Peppers, Freshly Cut Tomatoes, English Cucumbers, Red Onions, Chopped Romaine, Herb & Garlic Cream Cheese.  
+      Reg   4.00 / Lrg.   7.00
+  category_id: "7"
+  created_at: ~
+  filename: wraps-veggie.jpg
+  id: "31"
+  title: "Ultimate Veggie & Cheese"
+  updated_at: ~
+items_032: 
+  body: |-
+      Famous Pizzatown Sauce, Salami, Sliced Mushrooms, Shredded Mozzarella, Pepperoni, Red Onions, Green Peppers, Bacon, Hamburger.
+      S 10.00 / M 16.00 / L 23.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-supreme.jpg
+  id: "32"
+  title: "PT Supreme"
+  updated_at: ~
+items_033: 
+  body: |-
+      Famous Pizzatown Sauce, Bull's-Eye BBQ Sauce, Sliced Mushrooms, Shredded Mozzarella, Red Onions, Freshly Cut Tomatoes, Green Peppers, Chicken Breast.
+      S 11.00 / M 17.00 / L 24.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-bbq.jpg
+  id: "33"
+  title: "BBQ Chicken"
+  updated_at: ~
+items_034: 
+  body: |-
+      Famous Pizzatown Sauce, Salami, Shredded Mozzarella, Pepperoni, Ham, Bacon, Hamburger, Italian Sausage.
+      S 10.00 / M 16.00 / L 23.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-meat.jpg
+  id: "34"
+  title: Meatzzza
+  updated_at: ~
+items_035: 
+  body: |-
+      Famous Pizzatown Sauce, Mild Salsa, Shredded Mozzarella and Cheddar Blend, Banana Peppers, Freshly Cut Tomatoes, Green Peppers, Chicken Breast.
+      S 10.00 / M 17.00 / L 25.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-mex.jpg
+  id: "35"
+  title: Mexicana
+  updated_at: ~
+items_036: 
+  body: |-
+      Classic  Famous Pizzatown Sauce, Sliced Mushrooms, Shredded Mozzarella, Double Pepperoni, Green Peppers.
+      S 10.00 / M 15.00 / L 21.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-canadian.jpg
+  id: "36"
+  title: "PT Canadian"
+  updated_at: ~
+items_037: 
+  body: |-
+      Famous Pizzatown Sauce, Shredded Mozzarella, Double Ham, Bacon, Pineapple. 
+      S 10.00 / M 15.00 / L 21.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-aloha.jpg
+  id: "37"
+  title: "Aloha Hawaiian"
+  updated_at: ~
+items_038: 
+  body: |-
+      Beef Donair Meat, Shredded Mozzarella, Red Onions, Freshly Cut Tomatoes and a side of Donair or Tzatziki Sauce.
+      S 10.00 / M 16.00 / L 23.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-donair.jpg
+  id: "38"
+  title: "East Coast Donair"
+  updated_at: ~
+items_039: 
+  body: |-
+      Famous Pizzatown Sauce, Brother's Pepperoni, Sliced Mushrooms, Shredded Mozzarella, Banana Peppers, Green Peppers, Freshly Cut Tomatoes, Bacon, Hamburger, Sliced Green Olives.  
+      S 12.00 / M 18.00 / L 26.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-specialty.jpg
+  id: "39"
+  title: "PT Specialty"
+  updated_at: ~
+items_040: 
+  body: |-
+      Famous Pizzatown Sauce, Sliced Mushrooms, Shredded Mozzarella, Red Onions, Freshly Cut Tomatoes, Green Peppers, Sliced Green Olives, Pineapple.
+      S 10.00 / M 16.00 / L 23.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-veggie.jpg
+  id: "40"
+  title: "Traditional Veggie"
+  updated_at: ~
+items_041: 
+  body: |-
+      Famous Pizzatown Sauce, Shredded Mozzarella, Crumbled Feta, Oregano, Red Onions, Freshly Cut Tomatoes, Sliced Black Olives. 
+      S 10.00 / M 15.00 / L 21.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-greek.jpg
+  id: "41"
+  title: "The Greek"
+  updated_at: ~
+items_042: 
+  body: |-
+      Famous Pizzatown Sauce, Shredded Mozzarella, Crumbled Feta, Shredded Parmesan, Shredded Cheddar. 
+      S 10.00 / M 15.00 / L 21.00
+  category_id: "10"
+  created_at: ~
+  filename: pizzas-classics-cheeselove.jpg
+  id: "42"
+  title: "Cheese Lover's"
+  updated_at: ~
+items_043: 
+  body: |-
+      Famous Pizzatown Sauce, Shredded Mozzarella, Shredded Parmesan, Dried Basil, Chopped Garlic, Freshly Cut Tomatoes.   
+      S 10.00 / M 14.00 / L 20.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-margherita.jpg
+  id: "43"
+  title: Margherita
+  updated_at: ~
+items_044: 
+  body: |-
+      Famous Pizzatown Sauce, Sliced Mushrooms, Shredded Mozzarella, Crumbled Feta, Roasted Red Peppers, Red Onions, Chopped Garlic, Sliced Black Olives, Banana Peppers.
+      S 13.00 / M 16.00 / L 23.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-swveggie.jpg
+  id: "44"
+  title: "Southwest Veggie"
+  updated_at: ~
+items_045: 
+  body: |-
+      Famous Pizzatown Sauce, Shredded Mozzarella, Dried Basil, Roasted Red Peppers, Green Peppers, Freshly Cut Tomatoes, Artichoke Hearts, Sliced Black Olives.
+      S 11.00 / M 15.00 / L 22.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-gardino.jpg
+  id: "45"
+  title: "Gardino Fresco"
+  updated_at: ~
+items_046: 
+  body: |-
+      Famous Pizzatown Sauce, Shredded Mozzarella, Shredded Parmesan, Grilled Chicken Breast, Chopped Garlic, Italian Sausage, Red Onions, Roasted Red Peppers, Freshly Cut Tomatoes. 
+      S 13.00 / M 17.00 / L 25.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-tuscany.jpg
+  id: "46"
+  title: Tuscany
+  updated_at: ~
+items_047: 
+  body: |-
+      Famous Pizzatown Sauce, Bull's-Eye BBQ Sauce, Shredded Cheddar, Grilled Sirloin Steak, Chopped Garlic, Red Onion, Banana Peppers, Freshly Cut Tomatoes. 
+      S 11.00 / M 17.00 / L 25.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-spicyamer.jpg
+  id: "47"
+  title: "Spicy Americana"
+  updated_at: ~
+items_048: 
+  body: |-
+      Famous Pizzatown Sauce, Sliced Mushrooms, Shredded Mozzarella, Shredded Parmesan, Grilled Chicken Breast, Chopped Garlic, Roasted Red Peppers.         
+      S 11.00 / M 17.00 / L 25.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-chickparm.jpg
+  id: "48"
+  title: "Chicken Parmesan"
+  updated_at: ~
+items_049: 
+  body: |-
+      Diana's BBQ Sauce, Shredded Mozzarella, Shredded Cheddar, Grilled 
+      Chicken Breast, Roasted Red Peppers, Green Peppers, Pineapple. 
+      S 12.00 / M 17.00 / L 25.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-tropchick.jpg
+  id: "49"
+  title: "Tropical Chicken"
+  updated_at: ~
+items_050: 
+  body: |-
+      Diana's BBQ Sauce, Sliced Mushrooms, Shredded Mozzarella, Shredded Parmesan, Grilled Sirloin Steak, Shredded Cheddar, Freshly Cut Tomatoes, Roasted Red Peppers, Green Peppers. 
+      S 13.00 / M 18.00 / L 26.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-nyer.jpg
+  id: "50"
+  title: "New Yorker"
+  updated_at: ~
+items_051: 
+  body: |-
+      Herb & Garlic Cream Cheese, Shredded Cheddar, Grilled Turkey Breast, Bacon, Red Onions, Dried Cranberries.
+      S 11.00 / M 17.00 / L 24.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-turkey.jpg
+  id: "51"
+  title: "Turkey Club"
+  updated_at: ~
+items_052: 
+  body: |-
+      Diana's Thai Sweet and Spicy Sauce, Sliced Mushrooms, Shredded Mozzarella, Grilled Chicken Breast, Red Onions, Green Peppers, Slivered Almonds. 
+      S 12.00 / M 17.00 / L 25.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-thaichick.jpg
+  id: "52"
+  title: "Thai Chicken"
+  updated_at: ~
+items_053: 
+  body: |-
+      Tuna mixed in Light Mayonnaise, Shredded Mozzarella, Shredded Cheddar, Red Onions.
+      S 10.00 / M 15.00 / L 23.00
+  category_id: "11"
+  created_at: ~
+  filename: pizzas-gourmet-tuna.jpg
+  id: "53"
+  title: "Tuna Melt"
+  updated_at: ~
+items_054: 
+  body: |-
+      Famous Pizzatown Sauce, Sliced Black Olives, Freshly Cut Tomatoes, Red Onions, Oregano, Feta and Shredded Cheddar Blend.
+      10.00
+  category_id: "12"
+  created_at: ~
+  filename: pizzas-smart-med.jpg
+  id: "54"
+  title: Mediterranean
+  updated_at: ~
+items_055: 
+  body: |-
+      Famous Pizzatown Sauce, Green Peppers, Grilled Zucchini, Grilled Eggplant, Red Onions, Freshly Cut Tomatoes, Oregano, Shredded Mozzarella and Cheddar Blend.
+      10.00
+  category_id: "12"
+  created_at: ~
+  filename: pizzas-smart-garden.jpg
+  id: "55"
+  title: "Garden Fresh"
+  updated_at: ~
+items_056: 
+  body: |-
+      Diana's BBQ Sauce, Grilled Chicken Breast, Red Onions, Pineapple, Shredded Mozzarella and Cheddar Blend.
+      11.00
+  category_id: "12"
+  created_at: ~
+  filename: pizzas-smart-calchick.jpg
+  id: "56"
+  title: "California Chicken"
+  updated_at: ~
+items_057: 
+  body: |-
+      Salsa Sauce, Grilled Chicken Breast, Banana Peppers, Red Onions, Green Peppers, Shredded Mozzarella and Cheddar Blend.
+      11.00
+  category_id: "12"
+  created_at: ~
+  filename: pizzas-smart-texmex.jpg
+  id: "57"
+  title: "PT Tex Mex"
+  updated_at: ~
+items_058: 
+  body: |-
+      Famous Pizzatown Sauce, Bull's-Eye BBQ Sauce, Sirloin Steak, Red Onions, Green Peppers, Sliced Mushrooms, Shredded Mozzarella and Cheddar Blend.
+      11.00
+  category_id: "12"
+  created_at: ~
+  filename: pizzas-smart-wsteak.jpg
+  id: "58"
+  title: "Western Steak"
+  updated_at: ~
+items_059: 
+  body: |-
+      Original Deep Dish, Original Hand-Tossed, Multi-Grain Deep Dish*, Whole Wheat Deep Dish*. 
+      *12" Tortilla Shell:* Whole Wheat, Original, Sundried Tomato, Spinach Garlic & Pesto 
+      _*Available in the medium size only._
+  category_id: "13"
+  created_at: ~
+  filename: ""
+  id: "59"
+  title: "CHOOSE YOUR CRUST:"
+  updated_at: ~
+items_060: 
+  body: "Famous Pizzatown Sauce, Herb & Garlic Cream Cheese, Thai Sweet & Spicy, Bull's-Eye BBQ, Diana's BBQ, Mild Salsa, Donair Sauce"
+  category_id: "13"
+  created_at: ~
+  filename: ""
+  id: "60"
+  title: "CHOOSE YOUR SAUCE:"
+  updated_at: ~
+items_061: 
+  body: |-
+      Shredded Mozzarella, Shredded Cheddar, Shredded Parmesan*, Crumbled Feta* 
+      _*Counts as one topping_
+  category_id: "13"
+  created_at: ~
+  filename: ""
+  id: "61"
+  title: "CHOOSE YOUR CHEESE:"
+  updated_at: ~
+items_062: 
+  body: |
+      REGULAR: Tomatoes, Red Onions, Green Peppers, Mushrooms, Pineapple, Banana Peppers, Artichoke Hearts, Grilled Zucchini, Grilled Eggplant, Dried Cranberries, Sliced Green Olives, Sliced Black Olives, Roasted Red Peppers, Fresh Chopped Garlic, Slivered Almonds, Salami, Pepperoni, Bacon, Ham, Italian Sausage, Hamburger
+      
+      PREMIUM: Brother's Pepperoni, Beef Donair Meat, Grilled Sirloin Steak, Grilled Chicken Breast, Grilled Turkey Breast, Tuna
+      
+      FREE: Oregano, Dried Basil 
+  category_id: "13"
+  created_at: ~
+  filename: ""
+  id: "62"
+  title: "CHOOSE YOUR TOPPINGS:"
+  updated_at: ~
+items_063: 
+  body: |-
+      Cheese Pizza
+      S 7.50 / M 9.50 / L 14.50
+      
+      Regular Toppings
+      S .80 / M 1.25 / L 1.60
+      
+      Premium Toppings
+      S 2.75 / M 3.95 / L 5.50
+      
+      Extra Mozzarella or Cheddar
+      S 2.20 / M 3.30 / L 4.40
+      
+      Garlic Fingers
+      S 8.00 / M 10.00 / L 15.00
+      Served with dipping sauce (Pizza or Donair)
+  category_id: "13"
+  created_at: ~
+  filename: ""
+  id: "63"
+  title: "CHOOSE YOUR SIZE:"
+  updated_at: ~

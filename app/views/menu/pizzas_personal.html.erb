@@ -1,0 +1,23 @@
+<% @content_for_title = strip_tags(@subcategory.title) + " &mdash; " + strip_tags(@subcategory.parent.title) -%>
+<div id="content">
+<%= render :partial => "subcategory_subnav", :object => @subcategory %>
+	<h2><%= @subcategory.title %></h2>
+	<div class="sidebar">
+<% unless @subcategory.description.blank? -%>
+<%= textilize(@subcategory.description) %>
+<% end -%>
+	<p><span class="slideshow pizzas-personal"><img src="/images/sidebar/menu-pizzas-personal-5.jpg" alt="" /></span></p>
+	</div><!-- // sidebar -->
+	<ul class="items with-sidebar">
+<% @subcategory.items.sort_by(&:position).each do |item| -%>
+		<li>
+			<h3><%= textilize_without_paragraph(item.title) %></h3>
+			<div><%= textilize(item.body) %></div>
+		</li>
+<% end -%>
+	</ul><!-- // items -->
+<%= render :partial => "subcategory_subnav", :object => @subcategory %>
+</div><!-- // content -->
+
+<%= javascript_include_tag "jquery-1.2.6.min.js" %>
+<%= javascript_include_tag "slideshow.js" %>

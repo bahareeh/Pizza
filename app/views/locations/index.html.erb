@@ -1,0 +1,32 @@
+<% @content_for_title = "Store locations." -%>
+<div id="content">
+	<h2><span>Store</span> Locations.</h2>
+	<div class="sidebar">
+		<h3>Order by phone</h3>
+		<p><strong>Call 450-0000</strong> for all locations</p>
+		<p>Our delivery covers most of HRM</p>
+		<img src="/images/sidebar/locations-index.jpg" id="map" usemap="#locations-map" alt="" />
+		<map name="locations-map" id="locations-map">
+<%- @locations.each do |loc| -%>
+<%- unless loc.image_map_coordinates.blank? -%>
+			<area class="tooltip" shape="circle" coords="<%= loc.image_map_coordinates %>" href="<%= loc.map_url %>" alt="<%=h loc.name %>" />	
+<%- end -%>
+<%- end -%>
+		</map>
+	</div><!-- // sidebar -->
+	<div class="main">
+		<dl>
+<%- @locations.each do |loc| -%>
+			<dt><%=h loc.name %><%- if loc.name == 'Burnside' -%> <span class="only">Expanded menu!</span><%- end -%></dt>
+				<dd class="map"><%= link_to "View Map", loc.map_url %></dd>
+				<dd><%=h loc.street %></dd>
+				<dd><%=h loc.city %>, <%=h loc.province.abbreviation %> &nbsp; <%=h loc.postal_code %></dd>
+				<dd><%= link_to loc.email, "mailto:#{loc.email}" %></dd>
+				<dd><%=h loc.phone %></dd>
+<%- end -%>
+		</dl>
+	</div><!-- // main -->
+</div><!-- // content -->
+
+<%= javascript_include_tag "jquery-1.2.6.min.js" %>
+<%= javascript_include_tag "locations.js" %>

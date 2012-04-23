@@ -1,0 +1,57 @@
+<% @content_for_title = "Fresh jobs lives here." -%>
+<div id="content">
+	<h2><span>Fresh jobs</span> live here.</h2>
+	<div class="sidebar">
+		<img src="/images/sidebar/about-jobs.jpg" alt="" />
+	</div><!-- // sidebar -->
+	<div class="main">
+		<p>Pizzatown values the hard work and commitment of every employee at every location. As part of our team, you’re a key ingredient in our success, which is why we strive to keep all staff members fulfilled—through exciting incentives, flexible hours and competitive wages.</p>
+		<h3>Apply to join our growing family:</h3>
+<% unless @jobapp.errors.blank? -%>
+		<p class="error">We found <%= pluralize(@jobapp.errors.count, 'error') %> in your application:</p>
+<% end -%>
+		<% form_for(@jobapp, :html => { :multipart => true }, :url => { :action => "careers_apply" }) do |f| %>
+			<% field_set_tag do %>
+				<p><%= error_message_on @jobapp, :name, 'Name ', '.', "error" %>
+					<%= f.label :name, "Full Name:*" %>
+					<%= f.text_field :name, :class => "text" %>
+				</p>
+				<p><%= error_message_on @jobapp, :email, 'Email ', '.', "error" %>
+					<%= f.label :email, "Email Address:*" %>
+					<%= f.text_field :email, :class => "text" %>
+				</p>
+				<p><%= error_message_on @jobapp, :phone, 'Phone ', '.', "error" %>
+					<%= f.label :phone, "Phone Number:*" %>
+					<%= f.text_field :phone, :class => "text" %>
+				</p>
+				<p><%= error_message_on @jobapp, :hours, 'Hours ', '.', "error" %>
+					<%= f.label :hours, "Requested Hours:*" %>
+					<select id="job_application_hours" name="job_application[hours]">
+						<%= create_select_options ['Casual', 'Weekends', 'Part time days', 'Part time nights', 'Full time days', 'Full time nights', 'Full time any time'], @jobapp.hours %>
+					</select>
+				</p>
+				<p><%= error_message_on @jobapp, :position, 'Position ', '.', "error" %>
+					<%= f.label :position, "Requested Position:*" %>
+					<select id="job_application_position" name="job_application[position]">
+						<%= create_select_options ['Cook', 'Prep Work', 'Clerk/Cashier', 'Delivery Driver', 'Supervisor', 'Management'], @jobapp.position %>
+					</select>
+				</p>
+				<p><%= error_message_on @jobapp, :location_id, 'Location ', '.', "error" %>
+					<%= f.label :location_id, "Requested Location:*" %>
+					<%= f.collection_select(:location_id , Location.find(:all, :order => 'position ASC'), :id, :name, {:prompt => "Select one" }) %>
+				</p>
+				<p><%= error_message_on @jobapp, :attachment, 'Attachment ', '.', "error" %>
+					<%= f.label :attachment, "Resume Attachment:" %>
+					<%= f.file_field :attachment, :class => 'file', :size => 14 %>
+				</p>
+				<p><%= error_message_on @jobapp, :comment, 'Comments ', '.', "error" %>
+					<%= f.label :comment, "Additional Comments:" %>
+					<%= f.text_area :comment, :size => "40x4" %>
+				</p>
+				<p class="action">
+					<%= f.submit "Send Application", :id => 'button' %>
+				</p>
+			<% end %>
+		<% end %>
+	</div><!-- // main -->
+</div><!-- // content -->

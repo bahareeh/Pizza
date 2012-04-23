@@ -1,0 +1,19 @@
+<% @content_for_title = "Recent news." -%>
+<div id="content">
+	<h2><span>Recent</span> news&amp;events.</h2>
+<%= render :partial => 'tags' %>
+	<div class="news">
+<% @posts.each do |p| -%>
+		<h3><%=h p.title %></h3>
+<% unless p.attachment_file_name.nil? -%>
+		<div class="photo"><%= image_tag p.attachment.url(:thumb), :class => 'reflect' %></div>
+<% end -%>
+		<p><%= truncate(strip_tags(textilize(p.body)), :length => 220) %></p>
+		<p><%= link_to "Continue reading \"#{p.title}\" &gt;", about_news_view_path(p)  %></p>
+		<p><strong><%=h p.created_at.to_formatted_s(:post_date) %></strong> / <%=h p.tag_list%></p>
+<% end -%>		
+		<p class="archive"><a href="/about/news/archive">Older posts &gt;</a></p>
+<%= render :partial => 'layouts/newsletter' %>
+	</div><!-- // news -->
+</div><!-- // content -->	
+<%= javascript_include_tag "reflection.js" %>

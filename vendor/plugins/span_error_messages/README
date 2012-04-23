@@ -1,0 +1,18 @@
+SpanErrorMessages
+=================
+
+From: http://jarrettcolby.com/articles/4-span-tags-for-error-message-on-in-ruby-on-rails
+
+error_message_on gives you a flexible way to display validation errors, but unfortunately, it assumes that you want the messages printed inside <div> tags. A quick patch replaces the <div>s with <span>s, which are valid in a broader range of contexts.
+
+The options hash accepts four keys: :prepend_text, :append_text, :css_class, and :tag. Three of those used to be the optional parameters, and you can still use them that way, but I like having the choice to put them in a hash instead. It permits you to specify the css_class without filling in the default values for prepend_text and append_text.
+
+Example
+=======
+
+error_message_on(
+  @employee,
+  :email,
+  :css_class => 'really_bad_error',
+  :tag => 'p'
+)

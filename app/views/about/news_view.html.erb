@@ -1,0 +1,15 @@
+<% @content_for_title = h(@post.title) -%>
+<div id="content">
+	<h2><span>Recent</span> news&amp;events.</h2>
+<%= render :partial => 'tags' %>
+	<div class="news">
+		<h3><%=h @post.title %></h3>
+<% unless @post.attachment_file_name.nil? -%>
+		<div class="photo"><%= image_tag @post.attachment.url(:medium), :class => 'reflect' %></div>
+		<%= javascript_include_tag "reflection.js" %>
+<% end -%>
+<%= textilize(@post.body) %>
+
+		<p><strong><%=h @post.created_at.to_formatted_s(:post_date) %></strong> / <%=h @post.tag_list%></p>
+	</div><!-- // news -->
+</div><!-- // content -->

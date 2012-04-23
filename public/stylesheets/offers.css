@@ -1,0 +1,64 @@
+/*
+
+	Pizza Town Offers Styles
+	Kenzie Campbell [kenzie@famousfolks.ca]
+	pizzatown.ca/stylesheets/offers.css
+	October 2008
+	
+*/
+
+
+/* =Offers ******************************************************************/
+
+ul.offers {
+	list-style: none;
+	margin: 50px 0 0 80px;
+	overflow: hidden;
+}
+ul.offers li {
+	clear: both;
+}
+
+
+
+
+/* =Newsletter Forms ******************************************************************/
+
+form {
+	margin: 1em 0;
+	font-size: 1.4em;
+	width: 20em;
+}
+form h3 {
+	font-family: 'Arial Black';
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 1em 0;
+}
+form p {
+	margin: 0 0 1em 0;
+}
+form fieldset {
+	border: 0;
+	margin: 1em 0;
+}
+form label {
+	color: #DDD;
+	display: block;
+}
+form input.text, form select, form textarea, form input.file {
+	font-size: 1.4em;
+	width: 99%;
+}
+form .action {
+	text-align: center;
+}
+form #button {
+	font-size: 1.4em;
+}
+
+.error {
+	padding: 2px 0 2px 20px;
+	color: #D00;
+	background: url(../images/icon-alert.png) no-repeat 0 50%;
+}

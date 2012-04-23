@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="en" />
+	<title><%= page_title %></title>
+	<%= stylesheet_link_tag "common.css" %>
+	<%= stylesheet_link_tag params[:controller]+".css" %>
+<% if params[:controller] == "home" and  params[:action] =='tv' -%>	
+	<%= stylesheet_link_tag "tv.css" %>
+<% end -%>
+<% if params[:controller] == "home" -%>
+	<%= javascript_include_tag "jquery-1.2.6.min.js" %>
+	<%= javascript_include_tag "home.js" %>
+<% end -%>
+	<!--[if IE]><%= stylesheet_link_tag "ie.css" %><![endif]-->
+	<!--[if lt IE 7]><%= javascript_include_tag "unitpngfix.js" %><![endif]-->
+	<meta name="description" content="Pizzatown &mdash; Fresh taste lives here." />
+	<meta name="keywords" content="pizzatown, pizza town, pizza, nova scotia, take out, delivery, coupons, offers, appetizers, nachos, salads, donairs, calzones, wraps, pizzas, catering" />
+	<%= auto_discovery_link_tag(:rss, {:controller => "about", :action => "news_archive", :format => "rss"}) %>
+</head>
+<body id="<%= params[:controller] %>">
+
+
+<div id="branding">
+<% if params[:controller] == "home" -%>
+	<h1><img src="/images/pt-wordmark-trans.png" alt="Pizzatown" /></h1>
+<% else -%>
+	<h1><a href="/" title="Home"><img src="/images/logo-pizzatown.jpg" alt="Pizzatown" /></a></h1>
+<% end -%>
+	<div class="navigation">
+		<ul id="nav">
+<% if params[:controller] == "home" -%>
+			<li class="home current"><a title="Home">Home</a> /</li>
+<% else -%>
+			<li class="home"><a href="/" title="Home">Home</a> /</li>
+<% end -%>
+			<li<% if params[:controller] == "menu" %> class="current"<% end %>><%= link_to "Menu", :controller => "menu" %> /</li>
+			<li<% if params[:controller] == "locations" %> class="current"<% end %>><%= link_to "Locations", :controller => "locations" %> /</li>
+			<li<% if params[:controller] == "offers" %> class="current"<% end %>><%= link_to "Offers", :controller => "offers" %> /</li>
+			<li<% if params[:controller] == "catering" %> class="current"<% end %>><%= link_to "Catering", :controller => "catering", :action => 'menu' %> /</li>
+			<li<% if params[:controller] == "about" %> class="current"<% end %>><%= link_to "About Us", :controller => "about", :action => "history" %></li>
+		</ul><!-- // nav -->
+<%= render :partial => 'subnav' if params[:controller] == "about" or params[:controller] == "menu" or params[:controller] == "catering" -%>
+	</div><!-- // navigation -->
+</div><!-- // branding -->
+
+
+<%= yield %>
+<%= render :partial => 'layouts/callouts' unless params[:controller] == "home" -%>
+
+
+<ul id="siteinfo">
+<% unless params[:controller] == "home" -%>	<li><strong><%= link_to "Home", :controller => "home", :action => "index" %></strong> /</li>
+<% end -%>
+	<li<% if params[:controller] == "about" and params[:action] == "franchising" %> class="current"<% end %>><strong><%= link_to "Franchising", :controller => "about", :action => "franchising" %></strong> /</li>
+	<li<% if params[:controller] == "about" and /^careers/.match(params[:action]) %> class="current"<% end %>><strong><%= link_to "Careers", :controller => "about", :action => "careers" %></strong> /</li>
+	<li<% if /^contact/.match(params[:action]) %> class="current"<% end %>><strong><%= link_to "Contact Us", :controller => "about", :action => 'contact' %></strong> /</li>
+	<li<% if params[:controller] == "about" and params[:action] == 'gift_cards' %> class="current"<% end %>><strong><%= link_to "Gift Cards", :controller => "about", :action => 'gift_cards' %></strong> /</li>
+	<li<% if params[:action] == "privacy" %> class="current"<% end %>><%= link_to "Privacy Policy", :controller => "about", :action => 'privacy' %></li>
+</ul><!-- // siteinfo -->
+
+
+<%= render :partial => 'layouts/analytics' if RAILS_ENV == 'production' -%>
+</body>
+</html>

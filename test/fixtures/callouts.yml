@@ -1,0 +1,41 @@
+--- 
+callouts_001: 
+  alt: "We cater! Large group or small gathering? We can help."
+  created_at: ~
+  filename: /images/callouts/callout-catering.png
+  id: "1"
+  name: catering
+  updated_at: ~
+  url: /menu/catering
+callouts_002: 
+  alt: "Cookes wanted. Apply online."
+  created_at: ~
+  filename: /images/callouts/callout-cooks.png
+  id: "2"
+  name: cooks
+  updated_at: ~
+  url: /about/jobs
+callouts_003: 
+  alt: "Drivers wanted. Apply online."
+  created_at: ~
+  filename: /images/callouts/callout-drivers.png
+  id: "3"
+  name: drivers
+  updated_at: ~
+  url: /about/jobs
+callouts_004: 
+  alt: "Say cheese! Join our Facebook group now for exclusive offers."
+  created_at: ~
+  filename: /images/callouts/callout-facebook.png
+  id: "4"
+  name: facebook
+  updated_at: ~
+  url: "http://www.facebook.com/pages/pizzatown/46545330574"
+callouts_005: 
+  alt: "Franchise opportunities. Available now."
+  created_at: ~
+  filename: /images/callouts/callout-franchise.png
+  id: "5"
+  name: franchise
+  updated_at: ~
+  url: /about/franchising

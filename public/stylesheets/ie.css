@@ -1,0 +1,54 @@
+/*
+
+	Pizza Town IE Bugfix Styles
+	Kenzie Campbell [kenzie@famousfolk.ca]
+	pizzatown.ca/stylesheets/ie.css
+	October 2008
+	
+*/
+
+
+/* =Branding **********************************************************************/
+
+#branding {
+	min-height: 85px;
+}
+* html #branding {
+	height: 85px;
+}
+
+/* =Content **********************************************************************/
+
+* html #content {
+	background-image: none;
+}
+
+
+/* =Feature **********************************************************************/
+
+#feature h2 a span {
+	margin-bottom: 20px;
+}
+
+/* =Callouts ******************************************************************/
+
+* html #home #callouts {
+	margin-left: -15px;
+}
+
+/* =Nav ******************************************************************/
+
+ul#nav {
+}
+
+/* =Subnav ******************************************************************/
+
+ul.subnav {
+	clear: left;
+}
+
+/* =Items ******************************************************************/
+
+* html ul.items {
+	zoom: 1;
+}

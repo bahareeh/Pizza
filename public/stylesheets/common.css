@@ -1,0 +1,293 @@
+/*
+
+	Pizza Town Common Styles
+	Kenzie Campbell [kenzie@famousfolks.ca]
+	pizzatown.ca/stylesheets/common.css
+	October 2008
+	
+*/
+
+
+/* =Defaults ******************************************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a img {
+	border: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #000;
+	color: #FFF;
+	font-family: Arial, sans-serif;
+	font-size: 62.5%;
+	height: 100%;
+}
+
+
+/* =Links *********************************************************************/
+
+a:link, a:visited {
+	color: #B0B0B2;
+}
+a:active, a:focus, a:hover {
+	color: #DE3831
+;
+}
+a.current {
+	color: #FFF;
+}
+
+
+/* =Branding ******************************************************************/
+
+
+#branding {
+	background: #000;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+#branding h1 {
+	float: left;
+	height: 65px;
+	margin: 10px 15px 15px 15px;
+	width: 222px;
+}
+#branding .language a {
+	display: block;
+	font-family: 'Arial Black';
+	position: absolute;
+	right: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	top: 10px;
+}
+#branding .navigation {
+	float: left;
+}
+
+
+/* =Nav ******************************************************************/
+
+ul#nav {
+	font-size: 1.9em;
+	letter-spacing: -1px;
+	list-style: none;
+	margin: 32px 5px 20px 15px;
+	overflow: hidden;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+ul#nav li {
+	float: left;
+	padding: 0 .4em 0 0;
+}
+ul#nav li a {
+	font-family: 'Arial Black';
+	padding: 0 .2em 0 0;
+	text-decoration: none;
+}
+ul#nav li.current a {
+	color: #fff;
+}
+
+ul#nav li.home {
+	padding-top: 4px;
+}
+ul#nav li.home a {
+	display: block;
+	float: left;
+	height: 17px;
+	width: 17px;
+	text-indent: -900em;
+	overflow: hidden;
+	background: url(../images/icon-home.png) no-repeat 0 0;
+}
+ul#nav li.home a:hover {
+	background-position: 0 -17px;
+}
+
+
+/* =Subnav ******************************************************************/
+
+ul.subnav {
+	font-size: 1.2em;
+	list-style: none;
+	margin: -20px 0 0 15px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+ul.subnav li {
+	float: left;
+	padding: 0 .4em 0 0;
+}
+ul.subnav li a {
+	font-family: 'Arial Black';
+	padding: 0 .2em 0 0;
+	text-decoration: none;
+}
+ul.subnav li.current a {
+	color: #fff;
+}
+
+
+/* =Content ******************************************************************/
+
+#content {
+	background: url(../images/content-gradient.png) repeat-x;
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+
+#content h2 {
+	font-family: "Arial Black";
+	font-size: 6.8em;
+	line-height: .9;
+	margin-bottom: .7em;
+	padding: 20px;
+	text-transform: uppercase;
+}
+#content h2 span {
+	display: block;
+	font-size: .45em;
+}
+
+#content .main {
+	float: left;
+	font-size: 1.5em;
+	line-height: 1.5;
+	margin-left: 20px;
+	width: 375px;
+}
+
+#content .main p {
+	margin: 1em 0;
+}
+#content .main p:first-child {
+	margin-top: 0;
+}
+
+#content .main ul {
+	margin: 1em 0;
+	padding: 0 0 0 24px;
+}
+#content .main dl dt {
+	font-family: 'Arial Black';
+	margin-top: 1em;
+}
+#content .main dl dt:first-child {
+	margin-top: 0;
+}
+
+#content .sidebar {
+	float: left;
+	width: 500px;
+}
+
+#content .sidebar img {
+	margin-left: 70px;
+}
+#content .sidebar img.flush {
+	margin-left: 0;
+}
+
+#content .only {
+	font-size: .8em;
+	color: #43ac49;
+}
+#locations #content .main dl dt .only {
+	font-weight: normal;
+	padding-left: 1em;
+}
+
+
+/* =Callouts ******************************************************************/
+
+#callouts {
+	clear: both;
+	position: relative;
+}
+
+#callouts p {
+	font-family: 'Arial Black';
+	font-size: 3em;
+	line-height: 1;
+	padding-left: 20px;
+	text-transform: uppercase;
+}
+
+#callouts #logo {
+	bottom: -4em;
+	position: absolute;
+	right: 20px;
+	z-index: -1;
+}
+
+#callouts div img {
+	vertical-align: bottom;
+}
+#callouts div a {
+	display: block;
+	height: 90px;
+	margin: 0 0 0 510px;
+	overflow: hidden;
+	width: 350px;
+}
+#callouts div a:hover img {
+	margin-top: -90px;
+}
+
+
+/* =Sidebar Slideshow ******************************************************************/
+
+#content .sidebar .slideshow {
+	display: block;
+	overflow: hidden;
+	width: 375px;
+	height: 315px;
+	margin-left: 80px;
+	position: relative;
+}
+#content .sidebar .slideshow img {
+	margin: 0;
+	float: left;
+	width: 375px;
+	height: 315px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	vertical-align: bottom;
+}
+
+/* =Siteinfo ******************************************************************/
+
+#siteinfo {
+	clear: both;
+	list-style: none;
+	text-transform: uppercase;
+	margin-left: 20px;
+}
+
+#siteinfo li {
+	float: left;
+	padding: 0 .4em 15px 0;
+}
+#siteinfo li a {
+	padding: 0 .2em 0 0;
+	text-decoration: none;
+}
+#siteinfo li strong a {
+	font-family: 'Arial Black';
+	line-height: 1;
+}
+
+#siteinfo li.current a {
+	color: #fff;
+}

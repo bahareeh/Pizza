@@ -1,0 +1,18 @@
+/*
+
+	Pizza Town TV Styles
+	Kenzie Campbell [kenzie@famousfolks.ca]
+	pizzatown.ca/stylesheets/tv.css
+	December 2008
+	
+*/
+
+/* =Hide ******************************************************************/
+
+#nav, #siteinfo {
+	display: none;
+}
+
+#callouts {
+	bottom: 10px;
+}

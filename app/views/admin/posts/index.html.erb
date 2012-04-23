@@ -1,0 +1,23 @@
+<% @content_for_title = "News" -%>
+	<h2>News</h2>
+	<p class="button"><%= link_to "Create New", new_admin_post_path, :class => 'new' %></p>
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">Title</th>
+				<th scope="col">Date Published</th>
+				<th scope="col">Tags</th>
+				<th scope="col">Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+<% @posts.each do |p| -%>
+			<tr class="<%= cycle('odd', 'even') %>">
+				<td><%= link_to p.title, edit_admin_post_path(p), :class => "page-edit"  %></td>
+				<td><%= p.created_at.to_formatted_s(:post_date_short) %></td>
+				<td><em><%= p.tag_list %></em></td>
+				<td class="button"><%= link_to "X", admin_post_path(p), :class => 'delete', :method => :delete, :confirm => 'Delete post?' %></td>
+			</tr>
+<% end -%>
+		</tbody>
+	</table>

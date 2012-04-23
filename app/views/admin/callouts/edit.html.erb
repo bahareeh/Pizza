@@ -1,0 +1,4 @@
+<% @content_for_title = h(@callout.name.titlecase) -%>
+	<h2><%=h @callout.name.titlecase %></h2>
+<%= render :partial => 'form' %>
+	<p class="button"><%= link_to "Discard changes?", admin_callouts_path(), :class=> 'cancel', :confirm => "Discard changes?" %></p>

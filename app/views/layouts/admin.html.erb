@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<title><%= page_title %> Admin</title>
+	<%= stylesheet_link_tag "admin.css" %>
+	<!--[if IE]><%= stylesheet_link_tag "admin-ie.css" %><![endif]-->
+	<%= javascript_include_tag "jquery-1.2.6.min.js" %>
+	<%= javascript_include_tag "admin.js" %>
+</head>
+<body id="admin">
+
+
+<div id="branding">
+	<h1><img src="/images/admin/branding.png" height="25" alt="Pizzatown Administration"></h1>
+	<div class="session">Hello, <%= current_user.login %>! <%= link_to "Log out?", logout_path, :confirm => "Are you sure you want to log out?" %></div>
+<% flash.each do |key, msg| -%>
+	<%= content_tag :div, msg, :class => ['flash ', key] -%>
+<% end -%>	
+</div><!-- // branding -->
+<ul id="nav">
+	<li<%= ' class="current"' if params[:controller] == 'admin/posts' %>><%= link_to "News", admin_posts_path %></li>
+	<li<%= ' class="current"' if params[:controller] == 'admin/slides' %>><%= link_to "Slides", admin_slides_path %></li>
+	<li<%= ' class="current"' if params[:controller] == 'admin/categories' or  params[:controller] == 'admin/items' %>><%= link_to "Menu", admin_categories_path %></li>
+	<li<%= ' class="current"' if params[:controller] == 'admin/callouts' %>><%= link_to "Callouts", admin_callouts_path %></li>
+</ul><!-- // nav -->
+
+
+<div id="content">
+<%= yield %>
+</div><!-- // content -->
+
+
+</body>
+</html>

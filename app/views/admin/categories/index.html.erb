@@ -1,0 +1,20 @@
+<% @content_for_title = "Categories" -%>
+	<h2>Menu Categories</h2>
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">Title</th>
+				<th scope="col">Items</th>
+				<th scope="col">Date Published</th>
+			</tr>
+		</thead>
+		<tbody>
+<% @categories.each do |cat| -%>
+			<tr class="<%= cycle('odd', 'even') %>">
+				<td><%= link_to cat.formatted_name, edit_admin_category_path(cat), :class => "page-edit"  %></td>
+				<td><%= cat.items.count %></td>
+				<td><%= cat.created_at.to_formatted_s(:post_date_short) %></td>
+			</tr>
+<% end -%>
+		</tbody>
+	</table>

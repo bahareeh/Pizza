@@ -1,0 +1,21 @@
+<% @content_for_title = "Callouts" -%>
+	<h2>Callouts</h2>
+	<p class="button"><%= link_to "Create New", new_admin_callout_path, :class => 'new' %></p>
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Alt</th>
+				<th scope="col">Date Published</th>
+			</tr>
+		</thead>
+		<tbody>
+<% @callouts.each do |c| -%>
+			<tr class="<%= cycle('odd', 'even') %>">
+				<td><%= link_to c.name.titlecase, edit_admin_callout_path(c), :class => "page-edit"  %></td>
+				<td><%=h truncate(c.alt, 50) %></td>
+				<td><%= c.created_at.to_formatted_s(:post_date_short) %></td>
+			</tr>
+<% end -%>
+		</tbody>
+	</table>

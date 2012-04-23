@@ -1,0 +1,64 @@
+--- 
+locations_001: 
+  city: Dartmouth
+  created_at: ~
+  id: "1"
+  name: "Burnside Industrial Park"
+  phone: 446-8888
+  province_id: "1"
+  street: "202 Brownlow Ave."
+  updated_at: ~
+locations_002: 
+  city: Halifax
+  created_at: ~
+  id: "2"
+  name: "Fairview/Clayton Park"
+  phone: 444-3344
+  province_id: "1"
+  street: "3450 Joseph Howe Dr."
+  updated_at: ~
+locations_003: 
+  city: Dartmouth
+  created_at: ~
+  id: "3"
+  name: "Main St./Cole Harbour"
+  phone: 469-6666
+  province_id: "1"
+  street: "575 Main St."
+  updated_at: ~
+locations_004: 
+  city: Halifax
+  created_at: ~
+  id: "4"
+  name: Halifax
+  phone: 405-4444
+  province_id: "1"
+  street: "3045 Robie St."
+  updated_at: ~
+locations_005: 
+  city: "Lower Sackvill"
+  created_at: ~
+  id: "5"
+  name: Sackville
+  phone: 865-5555
+  province_id: "1"
+  street: "799 Sackville Dr."
+  updated_at: ~
+locations_006: 
+  city: Halifax
+  created_at: ~
+  id: "6"
+  name: "Lakeside/Bayers Lake Park"
+  phone: 876-0000
+  province_id: "1"
+  street: "2 Lakeside Park Dr."
+  updated_at: ~
+locations_007: 
+  city: "Upper Tantallon"
+  created_at: ~
+  id: "7"
+  name: Tantallon
+  phone: 826-9090
+  province_id: "1"
+  street: "3650 Hammonds Plains Rd."
+  updated_at: ~

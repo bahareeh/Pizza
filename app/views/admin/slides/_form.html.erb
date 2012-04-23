@@ -1,0 +1,33 @@
+	<% form_for [:admin, @slide], :html => { :multipart => true } do |f| %>
+<%= f.error_messages -%>
+		<div>
+		  <%= f.label "Tagline" %>
+		  <%= f.text_field :tagline1, :maxlength => 40, :class => 'max' %><br />
+		  <%= f.text_field :tagline2, :maxlength => 40, :class => 'max' %>
+		</div>
+		<div>
+		  <%= f.label :caveat, 'Optional Caveat' %>
+		  <%= f.text_field :caveat, :maxlength => 200, :size => 80, :class => 'max' %>
+		</div>
+		<div>
+		  <%= f.label :url %>
+		  <%= f.text_field :url, :size => 80, :class => 'max' %>
+		</div>
+		<div>
+		  <%= f.label :position %>
+		  <%= f.text_field :position, :maxlength => 40, :class => 'max' %>
+		</div>
+		<div>
+<% if @slide.attachment? %>
+			<div class="thumb">
+				<%= image_tag @slide.attachment.url(:thumb), :class => 'thumb', :width => 100 %><br />
+				<%= link_to "Delete image?", delete_attachment_admin_slide_path, :confirm => 'Are you sure you want to delete this image?' %>
+			</div>
+<% end %>
+			<%= f.label :attachment, "Image:" %> <em>(Max. 2 Mb, JPG)</em>
+			<%= f.file_field :attachment, :class => 'file', :size => 14 %>
+		</div>
+		<p class="action">
+		  <%= f.submit "Save Changes", :disable_with => "Saving..." %>
+		</p>
+	<% end %>

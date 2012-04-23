@@ -1,0 +1,18 @@
+<% @content_for_title = strip_tags(@category.title) -%>
+<div id="content">
+	<h2>Catering <span>Menu</span></h2>
+	<div class="sidebar">
+		<p>Whether you need to feed a small intimate group or a large gathering at home or at the office, we have a wide variety of fresh choices to suit any appetite.</p>
+		<p><a href="/catering/info" class="slice">Catering Info</a></p>
+		<img src="/images/sidebar/catering-menu.jpg" class="flush" alt="" />
+	</div><!-- // sidebar -->
+	<ul class="items">
+<% @category.items.sort_by(&:position).each do |item| -%>
+		<li>
+<% unless item.filename.blank? -%>			<img src="/images/menu/<%= item.filename %>" alt="" /><% end -%>
+			<h3><%= textilize_without_paragraph(item.title) %></h3>
+			<div><%= textilize(item.body) %></div>
+		</li>
+<% end -%>
+	</ul><!-- // items -->
+</div><!-- // content -->

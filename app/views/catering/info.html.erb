@@ -1,0 +1,12 @@
+<% @content_for_title = strip_tags(@category.title) -%>
+<div id="content">
+	<h2>Catering <span>Information</span></h2>
+	<div class="sidebar">
+		<p>Whether you need to feed a small intimate group or a large gathering at home or at the office, we have a wide variety of fresh choices to suit any appetite.</p>
+		<p><a href="/catering/menu" class="slice">Catering Menu</a></p>
+		<img src="/images/sidebar/catering-info.jpg" class="flush" alt="" />
+	</div><!-- // sidebar -->
+	<div class="main">
+<%= textilize(@category.description) %>
+	</div><!-- // main -->
+</div><!-- // content -->

@@ -1,0 +1,9 @@
+	<div class="tags">
+		<h3>Tags</h3>
+		<ul>
+<% tag_cloud @tags, %w(css1 css2 css3 css4) do |tag, css_class| -%>
+			<li<% if tag.name.downcase == params[:tag] %> class="current"<% end %>><%= link_to tag.name, about_news_tag_path(tag.name.downcase), :class => css_class %></li>
+<% end -%>
+		</ul>
+		<p class="feed"><a href="/about/news/archive.rss">Subscribe</a></p>
+	</div><!-- // tags -->

@@ -1,0 +1,178 @@
+/*
+
+	Pizza Town Menu Styles
+	Kenzie Campbell [kenzie@famousfolks.ca]
+	pizzatown.ca/stylesheets/menu.css
+	October 2008
+	
+*/
+
+
+/* =Content ******************************************************************/
+
+#content .main {
+	float: none;
+	width: auto;
+	margin: 0 150px 0 540px;
+}
+
+#content dl dt {
+	font-size: 1.4em;
+}
+
+#content .description {
+	font-size: 1.4em;
+	margin: -25px 0 50px 20px;
+	width: 475px;
+}
+#content .description h3 {
+	font-weight: normal;
+	margin: 1em 0;
+	text-transform: uppercase;
+}
+#content .description p {
+	margin: 1em 0;
+}
+#content .description strong {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#content .sidebar .pizzas-personal {
+	margin-top: 50px;
+}
+
+#content a.pdf {
+	display: block;
+	padding: 2px 0 2px 22px;
+	background: url(../images/icon-pdf.png) no-repeat 0 50%;
+}
+
+/* =Subsubnav ******************************************************************/
+
+ul.subsubnav {
+	font-size: 1.4em;
+	list-style: none;
+	margin: 20px 0 0 265px;
+	overflow: hidden;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+ul.subsubnav li {
+	float: left;
+	padding: 0 .4em 0 0;
+}
+ul.subsubnav li a {
+	font-family: 'Arial Black';
+	padding: 0 .2em 0 0;
+	text-decoration: none;
+}
+ul.subsubnav li.current a {
+	color: #fff;
+}
+
+
+/* =Table ******************************************************************/
+
+table {
+	margin: 1em 0;
+}
+table tr td {
+	padding: 0 1em 0 0;
+}
+
+.sidebar table {
+	font-size: 1.4em;
+	line-height: 1.4;
+	margin: 0 20px;
+	width: 85%;
+}
+.sidebar table th {
+	text-align: left;
+}
+.sidebar table th.size {
+	text-align: right;
+}
+.sidebar table td {
+	text-align: right;
+	padding: 0;
+}
+.sidebar p {
+	margin: 0 0 1em 20px;
+}
+
+/* Menu menu *****************************/
+
+#content {
+	position: relative;
+}
+#content .main .menu {
+	font-family: 'Arial Black';
+	font-size: 1.4em;
+	line-height: 1.1;
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+}
+#content .main .menu li {
+	float: left;
+	margin-right: 10px;
+	width: 280px;
+}
+#content .main .menu li a {
+	display: block;
+	padding-left: 22px;
+	text-decoration: none;
+	background: url(../images/slice-right.png) no-repeat 0 50%;
+}
+#content a.slice {
+	padding-left: 22px;
+	background: url(../images/slice-right.png) no-repeat 0 50%;
+}
+
+#content img.menu-decal {
+	position: absolute;
+	top: 5px;
+	left: 24em;
+}
+
+/* =Items ******************************************************************/
+
+ul.items {
+	list-style: none;
+	margin: 0 0 0 80px;
+	overflow: hidden;
+}
+ul.with-sidebar {
+	margin-left: 0;
+}
+ul.items li {
+	clear: both;
+	padding-bottom: 4em;
+}
+ul.items h3 {
+	font-family: 'Arial Black';
+	font-size: 2.2em;
+	margin: 0 150px 0 450px;
+	padding-top: 1em;
+}
+ul.with-sidebar h3 {
+	margin-left: 30px;
+}
+ul.items h3:first-child {
+	padding-top: 0;
+}
+ul.items div {
+	font-size: 1.5em;
+	margin: 0 150px 0 450px;
+	min-width: 300px;
+}
+ul.with-sidebar div {
+	margin-left: 30px;
+}
+ul.items div p {
+	margin: 0 0 1em 0;
+}
+ul.items img {
+	float: left;
+}

@@ -1,0 +1,9 @@
+		<ul class="subnav">
+			<li<% if params[:action] == "history" %> class="current"<% end %>><a href="/about/history">History</a> /</li>
+			<li<% if /^news/.match(params[:action]) %> class="current"<% end %>><a href="/about/news">News &amp; Events</a> /</li>
+			<li<% if params[:action] == "community" %> class="current"<% end %>><a href="/about/community">Community</a> /</li>
+			<li<% if params[:action] == "gift_cards" %> class="current"<% end %>><a href="/about/gift-cards">Gift Cards</a> /</li>
+			<li<% if params[:action] == "franchising" %> class="current"<% end %>><a href="/about/franchising">Franchising</a> /</li>
+			<li<% if /^careers/.match(params[:action]) %> class="current"<% end %>><a href="/about/careers">Careers</a> /</li>
+			<li<% if /^contact/.match(params[:action]) %> class="current"<% end %>><a href="/about/contact">Contact Us</a></li>
+		</ul><!-- // subnav -->

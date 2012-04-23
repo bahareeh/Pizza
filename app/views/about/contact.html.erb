@@ -1,0 +1,76 @@
+<% @content_for_title = "Here’s how you can reach us." -%>
+<div id="content">
+	<h2><span>Here’s how you can</span> reach us.</h2>
+	<div class="sidebar">
+		<h3>From feedback to franchising opportunities,<br/>we’re always happy to hear from you.</h3>
+		<img src="/images/sidebar/about-contact.jpg" class="flush" alt="" />
+	</div><!-- // sidebar -->
+	<div class="main">
+		<dl>
+			<dt>Order by phone</dt>
+				<dd><strong>Call 450-0000</strong> for all locations</dd>
+			<dt>General</dt>
+				<dd>Pizzatown Limited / Head Office</dd>
+				<dd>Suite 7, 2 Lakeside Park Drive</dd>
+				<dd>Lakeside, Nova Scotia Canada B3T 1L7</dd>
+				<dd>Fax: 902-876-8955 / Email: <a href="mailto:info@pizzatown.ca">info@pizzatown.ca</a></dd>
+			<dt>Customer Comments</dt>
+				<dd>Pizzatown Limited / Director Customer Relations</dd>
+				<dd>Suite 7, 2 Lakeside Park Drive</dd>
+				<dd>Lakeside, Nova Scotia Canada B3T 1L7</dd>
+				<dd>Fax: 902-876-8955 / Email: <a href="mailto:comments@pizzatown.ca">comments@pizzatown.ca</a></dd>
+			<dt>Employment</dt>
+				<dd>Pizzatown Limited / Director Human Resources</dd>
+				<dd>Suite 7, 2 Lakeside Park Drive</dd>
+				<dd>Lakeside, Nova Scotia Canada B3T 1L7</dd>
+				<dd>Fax: 902-876-8955 / <%= link_to 'Apply Online', :action => 'careers' %></dd>
+			<dt>Donations and Sponsors</dt>
+				<dd>All requests must be submitted in writing to:</dd>
+				<dd>Pizzatown Limited / Director Community Relations</dd>
+				<dd>Suite 7, 2 Lakeside Park Drive</dd>
+				<dd>Lakeside, Nova Scotia Canada B3T 1L7</dd>
+				<dd>Fax: 902-876-8955 / Email: <a href="mailto:community@pizzatown.ca">community@pizzatown.ca</a></dd>
+			<dt>Franchising</dt>
+				<dd>Pizzatown Limited / Franchising</dd>
+				<dd>Suite 7, 2 Lakeside Park Drive</dd>
+				<dd>Lakeside, Nova Scotia Canada B3T 1L7</dd>
+				<dd>Local: 902-221-TOWN (8696)</dd>
+				<dd>Toll Free: 1-877-877-8804</dd>
+				<dd>Email: <a href="mailto:franchising@pizzatown.ca">franchising@pizzatown.ca</a></dd>
+			<dt><a href="/locations">Contact a Branch</a></dt>
+		</dl>
+		<h3>Comments:</h3>
+<% unless @comment.errors.blank? -%>
+		<p class="error">We found <%= pluralize(@comment.errors.count, 'error') %> in your submission:</p>
+<% end -%>
+		<% form_for(@comment, :url => { :action => "contact_comment" }) do |f| %>
+			<% field_set_tag do %>
+				<p><%= error_message_on @comment, :subject, 'Subject ', '.', "error" %>
+					<%= f.label :subject, "Subject:" %>
+					<select id="comment_subject" name="comment[subject]">
+						<%= create_select_options ['Something you like', 'Something you dislike', 'Something you\'d like to know'], @comment.subject, 'Not applicable' %>
+					</select>
+				</p>
+				<p><%= error_message_on @comment, :location_id, 'Location ', '.', "error" %>
+					<%= f.label :location_id, "Location:" %>
+					<%= f.collection_select(:location_id , Location.find(:all, :order => 'position ASC'), :id, :name, {:prompt => "Not applicable" }) %>
+				</p>
+				<p><%= error_message_on @comment, :body, 'Comments ', '.', "error" %>
+					<%= f.label :body, "Comments:*" %>
+					<%= f.text_area :body, :size => "40x4" %>
+				</p>
+				<p><%= error_message_on @comment, :name, 'Name ', '.', "error" %>
+					<%= f.label :name, "Name:*" %>
+					<%= f.text_field :name, :class => "text" %>
+				</p>
+				<p><%= error_message_on @comment, :email, 'Email ', '.', "error" %>
+					<%= f.label :email, "Email:*" %>
+					<%= f.text_field :email, :class => "text" %>
+				</p>
+				<p class="action">
+					<%= f.submit "Send Feedback", :id => 'button' %>
+				</p>
+			<% end %>
+		<% end %>
+	</div><!-- // main -->
+</div><!-- // content -->

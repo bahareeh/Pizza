@@ -1,0 +1,56 @@
+/*
+
+	Pizza Town Locations Styles
+	Kenzie Campbell [kenzie@famousfolks.ca]
+	pizzatown.ca/stylesheets/locations.css
+	October 2008
+	
+*/
+
+
+/* =Content ******************************************************************/
+
+#content .main dl dd.map {
+	float: right;
+	font-size: .9em;
+}
+
+#content .sidebar {
+	float: left;
+	font-size: 1.4em;
+	margin-left: 20px;
+	width: 480px;
+}
+
+#content .sidebar h3 {
+	font-family: 'Arial Black';
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+#content .sidebar p strong {
+	display: block;
+	font-family: 'Arial Black';
+	font-size: 2.4em;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+#content .sidebar p {
+	margin-bottom: 2em;
+}
+
+#content .sidebar img {
+	margin-left: -20px;	
+	border: 0;
+}
+
+#tooltip{
+	position: absolute;
+	border: 1px solid #333;
+	background: #f7f5d1;
+	padding: 2px 5px;
+	color: #333;
+	display: none;
+	font-size: 1.2em;
+}

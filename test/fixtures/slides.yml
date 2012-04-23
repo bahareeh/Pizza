@@ -1,0 +1,29 @@
+--- 
+slides_001: 
+  created_at: "2008-11-03 23:18:49"
+  filename: /images/slides/3-photo.jpg
+  id: "1"
+  tagline1: "Grab a big sice"
+  tagline2: "for just $4."
+  updated_at: "2008-11-03 23:18:49"
+slides_002: 
+  created_at: "2008-11-03 23:18:49"
+  filename: /images/slides/1-photo.jpg
+  id: "2"
+  tagline1: "Fresh taste"
+  tagline2: "lives here."
+  updated_at: "2008-11-03 23:18:49"
+slides_003: 
+  created_at: "2008-11-03 23:18:49"
+  filename: /images/slides/4-photo.jpg
+  id: "3"
+  tagline1: "Welcome to the"
+  tagline2: "new Pizzatown"
+  updated_at: "2008-11-03 23:18:49"
+slides_004: 
+  created_at: "2008-11-03 23:18:49"
+  filename: /images/slides/2-photo.jpg
+  id: "5"
+  tagline1: Franchise
+  tagline2: opportunities.
+  updated_at: "2008-11-03 23:18:49"

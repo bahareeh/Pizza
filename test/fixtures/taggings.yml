@@ -1,0 +1,25 @@
+--- 
+taggings_001: 
+  created_at: "2008-11-04 20:09:30"
+  id: "1"
+  tag_id: "1"
+  taggable_id: "100"
+  taggable_type: Post
+taggings_002: 
+  created_at: "2008-11-04 20:09:30"
+  id: "2"
+  tag_id: "2"
+  taggable_id: "100"
+  taggable_type: Post
+taggings_003: 
+  created_at: "2008-11-04 20:09:30"
+  id: "3"
+  tag_id: "3"
+  taggable_id: "100"
+  taggable_type: Post
+taggings_004: 
+  created_at: "2008-11-04 20:09:30"
+  id: "4"
+  tag_id: "4"
+  taggable_id: "100"
+  taggable_type: Post

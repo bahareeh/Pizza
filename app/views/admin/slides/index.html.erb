@@ -1,0 +1,23 @@
+<% @content_for_title = "Slides" -%>
+	<h2>Slides</h2>
+	<p class="button"><%= link_to "Create New", new_admin_slide_path, :class => 'new' %></p>
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">Tagline</th>
+				<th scope="col">Position</th>
+				<th scope="col">Date Published</th>
+				<th scope="col">Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+<% @slides.each do |s| -%>
+			<tr class="<%= cycle('odd', 'even') %>">
+				<td><%= link_to [s.tagline1, ' ', s.tagline2], edit_admin_slide_path(s), :class => "page-edit"  %></td>
+				<td><%= s.position %></td>
+				<td><%= s.created_at.to_formatted_s(:post_date_short) %></td>
+				<td class="button"><%= link_to "X", admin_slide_path(s), :class => 'delete', :method => :delete, :confirm => 'Delete slide?' %></td>
+			</tr>
+<% end -%>
+		</tbody>
+	</table>

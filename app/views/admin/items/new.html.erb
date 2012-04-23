@@ -1,0 +1,4 @@
+<% @content_for_title = "Untitled" -%>
+	<h2><%= link_to @category.formatted_name, edit_admin_category_path(@category) %>: Untitled</h2>
+<%= render :partial => 'form' %>
+	<p class="button"><%= link_to "Discard changes?", edit_admin_category_path(@category), :class=> 'cancel', :confirm => "Discard changes?" %></p>

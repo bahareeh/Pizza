@@ -1,0 +1,14 @@
+<% @content_for_title = "Fresh taste lives here." -%>
+<div id="feature">
+	<span class="gradient-top"></span><span class="gradient-bottom"></span>
+	<h2 id="slide<%= @slide.id %>"><%= @slide.formatted_tagline %></h2>
+	<img src="<%= @slide.image %>" alt="<%=h @slide.tagline1 %> <%=h @slide.tagline2 %>" class="photo" />
+</div><!-- // feature -->
+
+
+<ul id="callouts">
+	<li class="callout"><a href="<%= @callout.url %>"><img src="<%= @callout.image %>" alt="<%=h @callout.alt %>" width="350" height="180" /></a></li>
+	<li><a href="/locations" title="Locations"><span>Order</span> by Phone <em>Call 450-0000</em></a></li>
+	<li><span>Order</span> Online <em>Coming soon!</em></li>
+	<li class="logo"><img src="/images/home/logo-round.png" alt="Pizzatown" width="96" height="96" /></li>
+</ul><!-- // callouts -->

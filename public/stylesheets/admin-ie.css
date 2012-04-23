@@ -1,0 +1,14 @@
+/*
+
+	Pizza Town Admin IE Bugfix Styles
+	Kenzie Campbell [kenzie@famousfolks.ca]
+	pizzatown.ca/stylesheets/admin-ie.css
+	November 2008
+	
+*/
+
+/* =Bugfixes ******************************************************************/
+
+form input[type=submit] {
+	margin-right: -20px;
+}

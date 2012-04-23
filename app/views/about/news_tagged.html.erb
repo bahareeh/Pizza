@@ -1,0 +1,11 @@
+<% @content_for_title = "Recent '#{@tag.titlecase}' news." -%>
+<div id="content">
+	<h2><span>Recent</span> news&amp;events.</h2>
+<%= render :partial => 'tags' %>
+	<div class="news">
+		<h3>TAG: <%=h @tag.titlecase %></h3>
+<% @posts.each do |p| -%>
+		<p><%= link_to p.title+" &mdash; "+p.created_at.to_formatted_s(:post_date_short), about_news_view_path(p)  %></p>
+<% end -%>
+	</div><!-- // news -->
+</div><!-- // content -->

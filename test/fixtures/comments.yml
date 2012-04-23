@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  body: MyText
+  location_id: 1
+  subject: MyString
+
+two:
+  name: MyString
+  email: MyString
+  body: MyText
+  location_id: 1
+  subject: MyString

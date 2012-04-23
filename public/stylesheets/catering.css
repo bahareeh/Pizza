@@ -1,0 +1,75 @@
+/*
+
+	Pizza Town Catering Styles
+	Kenzie Campbell [kenzie@famousfolks.ca]
+	pizzatown.ca/stylesheets/catering.css
+	November 2008
+	
+*/
+
+
+/* =Sidebar ******************************************************************/
+
+.sidebar {
+	font-size: 1.5em;
+	line-height: 1.5;
+}
+.sidebar p {
+	margin: 0 50px 1em 20px;
+}
+.sidebar ul {
+	margin: 0 50px 1em 44px;
+}
+.sidebar img {
+	margin-top: 25px;
+}
+
+#content a.slice {
+	display: block;
+	padding-left: 22px;
+	text-decoration: none;
+	background: url(../images/slice-right.png) no-repeat 0 50%;
+	line-height: .8em;
+}
+
+
+/* =Main ******************************************************************/
+
+#content .main {
+	width: auto;
+	float: none;
+	margin: 0 150px 40px 530px;
+}
+
+/* =Items ******************************************************************/
+
+ul.items {
+	list-style: none;
+	margin: 0 0 0 0;
+	overflow: hidden;
+}
+ul.items li {
+	clear: both;
+	padding-bottom: 4em;
+}
+ul.items h3 {
+	font-family: 'Arial Black';
+	font-size: 2.2em;
+	margin: 0 150px .5em 30px;
+	padding-top: 1em;
+}
+ul.items h3:first-child {
+	padding-top: 0;
+}
+ul.items div {
+	font-size: 1.5em;
+	margin: 0 150px 0 30px;
+	min-width: 300px;
+}
+ul.items div p {
+	margin: 0 0 1em 0;
+}
+ul.items img {
+	float: left;
+}
+

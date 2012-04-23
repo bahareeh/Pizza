@@ -1,0 +1,10 @@
+	<% form_for([:admin, @category]) do |f| %>
+<%= f.error_messages -%>
+		<div>
+		  <%= f.label :description %>
+		  <%= f.text_area :description, :size => '40x10' %>
+		</div>
+		<p class="action">
+		  <%= f.submit "Save Changes", :disable_with => "Saving..." %>
+		</p>
+	<% end %>
